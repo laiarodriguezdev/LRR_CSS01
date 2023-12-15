@@ -1,0 +1,36 @@
+.title{
+    width:400px;
+    margin:auto;
+    text-align:center;
+    font-family:'Arial';
+    font-size:12px;
+}
+
+/*--FLOAT--*/
+.container-fo{
+    width:auto;
+    border:1px solid blue;
+    overflow: hidden;
+    padding:5px;
+    margin:5px;
+}
+
+.article-fo1{
+    float:left;
+    border:1px solid red;
+    overflow: hidden;
+    padding:10px;
+    width:80%;
+}
+
+.article-fo2{
+    float:right;
+    border:2px dotted cyan;
+    padding:10px;
+    width:calc();
+}
+
+/*--FLEX--*/
+.container-flex{
+
+}
