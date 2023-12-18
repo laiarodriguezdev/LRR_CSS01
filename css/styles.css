@@ -1,5 +1,5 @@
 body {
-      background-color: #c7c7c7;
+      background-color: #e4e4e4;
   }
   
   .title {
@@ -33,6 +33,9 @@ body {
   }
   
   .article-fo > div {
+      display:block;
+      position:relative;
+      top:0px;
       content:'';
       background-image: url('../img/KtQ7YVq.jpg');
       background-size: 100%;
