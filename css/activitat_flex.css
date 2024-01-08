@@ -1,0 +1,123 @@
+/*--
+    BASE 1 ITEMS, LAIA RODRÍGUEZ
+--*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+ }
+ 
+ section {
+    min-height: 100vh;
+ }
+ 
+ div {
+    background-color: lightgrey;
+ }
+
+ div:nth-of-type(5n+2) {
+    background-color:  #0A89A6;
+ }
+ 
+ div:nth-of-type(5n+3) {
+    background-color: #C8E6C9;
+ }
+ 
+ div:nth-of-type(5n+4) {
+    background-color: #278C7A;
+ }
+ 
+ div:nth-of-type(5n) {
+    background-color: #212121;
+ }
+ 
+ div:nth-of-type(5n+1) {
+    background-color:  #93A603;
+ }
+
+span {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    display: block;
+    font-size: 48px;
+    height: auto;
+    line-height: 3em;
+    text-align: center;
+    width: 3em;
+}
+
+/*--TRANSFORM--*/
+section > div:hover span{
+    transform:rotate(42deg);
+}
+
+/*--DISPLAY--*/
+.displayFlex{
+    display:flex;
+}
+
+
+/*--EX2 + EX3 --*/
+
+.displayFlexItems{
+    display:flex;
+    gap:1em;
+    flex-wrap: wrap;
+}
+
+section > div{
+    flex: 1 0 25%;
+    padding:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*--
+    BASE 2 MENU, LAIA RODRÍGUEZ
+--*/
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100px;
+ }
+ 
+ li {
+    background-color: lightgrey;
+    text-align: center;
+ }
+ 
+ li:nth-of-type(5n+2) {
+    background-color:  #0A89A6;
+ }
+ 
+ li:nth-of-type(5n+3) {
+    background-color: #C8E6C9;
+ }
+ 
+ li:nth-of-type(5n+4) {
+    background-color: #278C7A;
+ }
+ 
+ li:nth-of-type(5n) {
+    background-color: #212121;
+ }
+ 
+ li:nth-of-type(5n+1) {
+    background-color:  #93A603;
+ }
+ 
+ a {
+    color: white;
+    font-size: 16px;
+    line-height: 50px;
+    text-decoration: none;
+ }
+  
+ 
