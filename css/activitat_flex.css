@@ -30,7 +30,7 @@ div:nth-of-type(5n) {
 }
 
 /*--EX5--*/
-@media (max-width: 1024px){
+@media (max-width: 1024px){   
 
    section > div:nth-of-type(5n+2) {
       flex: 1 0 40%;
@@ -86,20 +86,74 @@ div:nth-of-type(5n) {
 }
 
 /*--EX8--*/
+@media (min-width: 1050px){ 
+   .displayFlexItems{ 
+      /*--AIXO HA DE ANAR TOTALMENT DIFERENT--*/
+      display:flex;
+      gap:1em;
+      flex-wrap: wrap;
+   }
+   
+   div:nth-of-type(5n) {
+      flex: 1 0 20%;
+   }
 
+      
+   div:nth-of-type(5n+4) {
+      flex: 1 3 20%;
+   }
+}
 
-
+/*--EX MENÚ--*/
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    height: 100px;
+    width:auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
  }
- 
- li {
-    background-color: lightgrey;
-    text-align: center;
- }
+
+/*--MEDIA QUERY AMB 600PX--*/
+@media (max-width: 600px){ 
+   ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      height: 50px;
+      display: block;
+   }
+}
+
+
+li {
+   width: 100%;
+   text-align: center;
+   /*-PER QUANT FA EL HOVER, QUE TOT SIGUI CENTRAT---*/
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+
+   transition: all 0.8s ease-in-out;
+}
+
+li:hover{
+   width: calc(100% + 0.25rem);
+   height: calc(100% + 0.005em);
+   transition: all 0.8s ease-in-out;
+}
+
+li:hover a{
+   text-align: center;
+}
  
  li:nth-of-type(5n+2) {
     background-color:  #0A89A6;
