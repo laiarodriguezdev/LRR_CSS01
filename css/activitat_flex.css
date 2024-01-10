@@ -86,9 +86,30 @@ div:nth-of-type(5n) {
 }
 
 /*--EX8--*/
+.ex8{
+   display:flex;
+}
+
+.ex8 > article{
+   display: flex;
+   gap:1em;
+   flex-direction: row;
+   flex-wrap: wrap;
+
+}
+
+article > div {
+   flex: 1 0 25%;
+}
+
+.ex8 > div {
+   flex: 1 0 12%;
+}
+
+/*--MEDIA QUERIES 1050px--*/
+
 @media (min-width: 1050px){ 
    .displayFlexItems{ 
-      /*--AIXO HA DE ANAR TOTALMENT DIFERENT--*/
       display:flex;
       gap:1em;
       flex-wrap: wrap;
