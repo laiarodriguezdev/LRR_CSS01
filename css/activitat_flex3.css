@@ -5,8 +5,15 @@ section > div:hover span{
 
 /*--EX 8--*/
 
-.ex8{
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+div:nth-of-type(5n+4){
+    flex:2 2 auto;
+    align-items: stretch;
 }
 
 /*--EX MENÚ--*/
