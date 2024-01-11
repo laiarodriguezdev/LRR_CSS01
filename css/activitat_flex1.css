@@ -1,0 +1,9 @@
+/*--TRANSFORM--*/
+section > div:hover span{
+    transform:rotate(42deg);
+}
+
+/*--DISPLAY FLEX VERTICAL--*/
+section{
+    display:flex;
+}
