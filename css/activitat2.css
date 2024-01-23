@@ -1,96 +1,127 @@
 /*-- BODY PER FONT --*/
-body{
-    margin:0px;
-    padding:0px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:15px;
-    overflow-x: hidden;
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  overflow-x: hidden;
 }
 
 /*-- HEADER --*/
 
-nav{
-    position:fixed;
-    background-color: #0c0c0c;
-    width:100%;
-    padding:2rem 0rem;
-    overflow: hidden;
-    display: block;
-    z-index:99;
+nav {
+  position: fixed;
+  background-color: #0c0c0c;
+  width: 100%;
+  padding: 2rem 0rem;
+  overflow: hidden;
+  display: block;
+  z-index: 99;
 }
 
-nav div{
-    float:right;
+nav div {
+  float: right;
 }
 
-nav a{
-    padding:3.5rem;
-    background-color:grey;
-    color:cyan;
-    width:100%;
-    height:100%;
-    transition: all 0.5s ease-out;
+nav a {
+  padding: 3.5rem;
+  background-color: grey;
+  color: cyan;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-out;
 }
 
-a:hover{
-    background-color:red;
-    transition: all 0.5s ease-out;
+a:hover {
+  background-color: red;
+  transition: all 0.5s ease-out;
 }
 
-header{
-    width:100%;
-    height:350px;
-    padding:1.5rem;
-    background-image: url("https://i.imgur.com/VNofsCE.jpg");
-    display:flex;
-    overflow: hidden;
-    
+header {
+  width: 100%;
+  height: 350px;
+  padding: 1.5rem;
+  background-color: cadetblue;
+  display: flex;
+  overflow: hidden;
 }
 
-header h1{
-    margin-top:10rem;
-    font-size:3rem;
-    margin-left: 5%;
+header h1 {
+  margin-top: 10rem;
+  font-size: 3rem;
+  margin-left: 5%;
 }
-
 
 /*-- MAIN --*/
 
-main{
-    position:relative;
-    background-color:purple;
-    padding:3rem;
-    color:#ccc;
-    width:calc(3rem- 100%);
-    height:800px;
-    z-index:-9;
+main {
+  position: relative;
+  background-color: purple;
+  padding: 3rem;
+  color: #ccc;
+  width: calc(3rem- 100%);
+  height: 800px;
+  z-index: -9;
 }
 
-h2{
-    color:aquamarine;
-    margin-left: 13%;
+h2 {
+  color: aquamarine;
+  margin-left: 13%;
 }
 
-section{
-    display:flex;
-    margin:auto;
+section {
+  margin: auto;
+  width: 1200px;
+  background-color: red;
+  height: 300px;
+  overflow: hidden;
+}
+
+.sectLeft {
+  float: left;
+  width: calc(1200px - 88%);
+  height: 100%;
+  background-color: peru;
+}
+
+.sectRight {
+  float: right;
+  background-color: deeppink;
+  padding: 1rem 2rem;
+  text-align: justify;
+  width: calc(1200px - 22%);
+  height: 100%;
+}
+
+.sectLeft2 {
+  float: left;
+  width: calc(1200px - 20%);
+  height: 100%;
+  background-color: peru;
+  padding: 1.5rem;
+}
+
+.sectRight2 {
+  float: right;
+  background-color: black;
+  height: 100%;
+  width: calc(1200px - 84%);
 }
 
 /*-- FOOTER --*/
 
-footer{
-    padding:1.5rem;
-    width:100%;
-    height:1.5rem;
-    display: flex;
-    justify-content: space-between;
+footer {
+  padding: 1.5rem;
+  width: 100%;
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-footer .containerLeft{
-    margin-left: 2rem;
+footer .containerLeft {
+  margin-left: 2rem;
 }
 
-footer .containerRight{
-    margin-right:5rem;
+footer .containerRight {
+  margin-right: 5rem;
 }
-
