@@ -41,7 +41,8 @@ header {
   width: 100%;
   height: 350px;
   padding: 1.5rem;
-  background-image: url('https://i.imgur.com/KtQ7YVq.jpg');
+  background-image: url('https://i.imgur.com/VNofsCE.jpg');
+  background-size: 100%;
   display: flex;
   overflow: hidden;
 }
@@ -71,40 +72,30 @@ h2 {
 
 section {
   margin: auto;
-  width: calc(3rem- 100%);
-  background-color: red;
+  width: calc(100% - 10rem);
   height: 300px;
   overflow: hidden;
 }
 
 .sectLeft {
   float: left;
-  width: 22%;
+  width: 20%;
   height: 100%;
-  background-image: url('https://i.imgur.com/a1A65Ij.jpg');
-  background-size: cover;
-}
-
-.sectRight {
-  float: right;
-  width: 74.3%;
-  background-color: deeppink;
-  padding: 1rem 2rem;
-  text-align: justify;
-  height: 100%;
-}
-
-.sectLeft2 {
-  float: left;
-  width: 80%;
-  height: 100%;
-  background-color: peru;
+  background-image: url('https://i.imgur.com/VNofsCE.jpg');
+  background-size: contain;
   padding: 1.5rem;
 }
 
-.sectRight2 {
-  background-color: black;
+.sectRight {
+  background-color: deeppink;
   height: 100%;
+  width: auto;
+  margin-top: -0.9rem;
+  margin-left: 23rem;
+}
+
+.sectRight p{
+  padding:2rem;
 }
 
 /*-- FOOTER --*/
