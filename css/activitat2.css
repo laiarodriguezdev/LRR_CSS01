@@ -41,7 +41,7 @@ header {
   width: 100%;
   height: 350px;
   padding: 1.5rem;
-  background-color: cadetblue;
+  background-image: url('https://i.imgur.com/KtQ7YVq.jpg');
   display: flex;
   overflow: hidden;
 }
@@ -54,13 +54,13 @@ header h1 {
 
 /*-- MAIN --*/
 
-main {
+article {
   position: relative;
   background-color: purple;
   padding: 3rem;
   color: #ccc;
-  width: calc(3rem- 100%);
-  height: 800px;
+  width: calc(100% - 6rem);
+  height: 80%;
   z-index: -9;
 }
 
@@ -71,7 +71,7 @@ h2 {
 
 section {
   margin: auto;
-  width: 1200px;
+  width: calc(3rem- 100%);
   background-color: red;
   height: 300px;
   overflow: hidden;
@@ -79,33 +79,32 @@ section {
 
 .sectLeft {
   float: left;
-  width: calc(1200px - 88%);
+  width: 22%;
   height: 100%;
-  background-color: peru;
+  background-image: url('https://i.imgur.com/a1A65Ij.jpg');
+  background-size: cover;
 }
 
 .sectRight {
   float: right;
+  width: 74.3%;
   background-color: deeppink;
   padding: 1rem 2rem;
   text-align: justify;
-  width: calc(1200px - 22%);
   height: 100%;
 }
 
 .sectLeft2 {
   float: left;
-  width: calc(1200px - 20%);
+  width: 80%;
   height: 100%;
   background-color: peru;
   padding: 1.5rem;
 }
 
 .sectRight2 {
-  float: right;
   background-color: black;
   height: 100%;
-  width: calc(1200px - 84%);
 }
 
 /*-- FOOTER --*/
