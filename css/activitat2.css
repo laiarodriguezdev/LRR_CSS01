@@ -274,7 +274,7 @@ footer .containerRight {
 }
 
 /*--MEDIA QUERIES--*/
-
+/*
 @media (min-width: 600px) and (max-width: 768px) {
   .flex-container {
     width: 100%;
@@ -292,3 +292,4 @@ footer .containerRight {
     height: 100%;
   }
 }
+*/
