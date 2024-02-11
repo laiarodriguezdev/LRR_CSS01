@@ -70,14 +70,15 @@ article {
 }
 
 h2 {
+  width: 80%;
+  padding: 2rem;
+  margin: auto;
   color: #1a1a1a;
-  margin-left: 13%;
 }
 
 section {
   margin: auto;
   width: calc(100% - 10rem);
-  height: 300px;
   overflow: hidden;
 }
 
@@ -120,12 +121,13 @@ section {
 }
 
 h3 {
+  width: 77%;
   margin: auto;
   background-color: #1a1a1a;
   padding: 2% 4%;
   border-radius: 0.35rem;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 .sectRight2 img,
@@ -138,6 +140,8 @@ h3 {
 
 /*--GRID--*/
 .grid-container {
+  padding: 1rem;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
@@ -175,6 +179,9 @@ h4 {
 }
 
 h5 {
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: break-all;
   color: #141414;
   font-weight: 400;
   font-size: 1.2em;
