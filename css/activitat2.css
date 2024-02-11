@@ -206,7 +206,8 @@ h5 {
 /*--FLEX--*/
 .flex-container {
   width: 100%;
-  height: 40rem;
+  height: 50rem;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
