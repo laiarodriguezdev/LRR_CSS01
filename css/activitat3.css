@@ -1,46 +1,41 @@
-/*--MEDIA QUERIES--*/
+span {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    font-size: 1.5em;
+    line-height: 3em;
+    text-align: center;
+    width: 3em;
+    display: block;
+ }
 
-/*800PX
-------------- a la secció Carta, les dues fotos de cada menú apareguin una sota l’altra
-------------- els elements de la secció Galeria es vegin dos a cada fila
-*/
-@media screen and (max-width: 800px) {
-  .flex-container {
-    width: 100%;
-    height: 40rem;
-    padding: 0rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: flex-start;
-  }
+ .el1{
+    background-color:  #93A603;
+ }
+ 
+ 
+ .el2 {
+    background-color:  #0A89A6;
+ }
+ 
+ 
+ .el3 {
+    background-color: #C8E6C9;
+ }
+ 
+ 
+ .el4 {
+    background-color: #278C7A;
+ }
+ 
+ 
+ .el5 {
+    background-color: #212121;
+ }
 
-  .flx {
-    width: 45%;
-  }
-}
+/*--EXERCICI 1--*/
 
-/*600PX
-------------- Tots els elements apareguin en una sola columna.
-------------- reduir el marge a banda i banda
-*/
-@media screen and (max-width: 600px) {
-  .flex-container {
-    width: 100%;
-    height: 40rem;
-    padding: 0rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-  }
-  .flx {
-    width: 100%;
-    height: 10%;
-    border: 2px solid transparent;
-    outline: 2px solid transparent;
-  }
-}
+ .ex1{
+    display:grid;
+    grid-template-columns: auto auto;
+ }
+ 

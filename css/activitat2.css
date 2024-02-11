@@ -63,7 +63,7 @@ header h1 {
 
 article {
   position: relative;
-  padding: 3rem;
+  padding: 1rem;
   color: #ccc;
   width: calc(100% - 3rem);
   height: 80%;
@@ -123,7 +123,7 @@ h3 {
   margin: auto;
   background-color: #1a1a1a;
   padding: 2% 4%;
-  border-radius: 25px;
+  border-radius: 0.35rem;
   text-align: center;
   font-size: 25px;
 }
@@ -139,15 +139,15 @@ h3 {
 /*--GRID--*/
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  gap: 10px;
-  padding: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
 }
 
 .item1 {
   border: 1px solid #1a1a1a;
-  grid-row: 1 / 50;
-  grid-column: 1 / 4;
+  background-color: #C8C8C8;
+  grid-row: span 7;
+  grid-column: span 1;
   display: grid;
   align-items: center;
   justify-items: center;
@@ -163,9 +163,9 @@ h3 {
 }
 
 .item2 {
-  grid-row: 1 / 25;
-  grid-column: 4 / 5;
-  padding: 2rem;
+  grid-row: span 2;
+  grid-column: span 4;
+  padding: 0.7rem;
 }
 
 h4 {
@@ -181,26 +181,37 @@ h5 {
 }
 
 .item3 {
-  grid-row: 25 / 50;
-  grid-column: 4 / 5;
-  overflow: hidden;
+  grid-column: span 2;
+    grid-row: span 5;
+    height: 200px;
+
 }
 
-.grid-petit {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 10px;
-  justify-content: space-around;
+.item4 {
+  grid-column: span 2;
+    grid-row: span 5;
+    height: 200px;
+
 }
 
 .img1 {
-  grid-row: 1/26;
-  grid-column: 1/2;
+  background-size: cover;
+  background-image: url('https://i.imgur.com/Zd8cC6h.jpeg');
 }
 
-.img2 {
-  grid-row: 1/26;
-  grid-column: 3/4;
+.item4 p,
+.item3 p{
+  position: relative;
+  top: 25%;
+  left: 35%;
+  text-align: center;
+  width: 20%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #ccc;
+  padding: 2rem;
+  font-weight: 800;
+  overflow: hidden;
 }
 
 /*--FLEX--*/
@@ -245,6 +256,11 @@ h5 {
   -webkit-transition: 0.8s ease-in-out;
 }
 
+.flxH{
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply;
+}
+
 .flxH:hover {
   background-color: rgba(0, 0, 0, 0.85);
   background-blend-mode: multiply;
@@ -268,29 +284,9 @@ footer {
 
 footer .containerLeft {
   margin-left: 2rem;
+  
 }
 
 footer .containerRight {
   margin-right: 5rem;
 }
-
-/*--MEDIA QUERIES--*/
-/*
-@media (min-width: 600px) and (max-width: 768px) {
-  .flex-container {
-    width: 100%;
-    height: 40rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .flx{
-    width:100%;
-    height: 100%;
-  }
-}
-*/
