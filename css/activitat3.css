@@ -109,6 +109,7 @@ span {
    grid-column-end: 3;
 }
 
+ /*--EXERCICI 7--*/
 .ex7{
    display: grid;
    grid-template-columns: auto auto auto auto;
@@ -126,4 +127,104 @@ span {
    grid-column-end: 5;
    grid-row-start: 1; 
    grid-row-end: 3; 
+}
+
+
+ /*--EXERCICI 8--*/
+ .ex8{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   grid-template-rows: auto auto auto; 
+   grid-gap: 20px 10px; 
+}
+
+.ex8 > .elemnt1{
+   grid-column-start: 1;
+   grid-column-end: 3;
+}
+
+.ex8 > .elemnt2{
+   grid-column-start: 3;
+   grid-column-end: 5;
+   grid-row-start: 1; 
+   grid-row-end: 3; 
+}
+
+ /*--EXERCICI 9--*/
+ .ex9{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   grid-template-rows: auto auto auto; 
+   grid-gap: 20px 10px; 
+}
+
+.ex9 > .elemnt1{
+   grid-column-start: 1;
+   grid-column-end: 3;
+}
+
+.ex9 > .elemnt2{
+   grid-column-start: 3;
+   grid-column-end: 5;
+   grid-row-start: 1; 
+   grid-row-end: 3; 
+}
+
+.ex9 > .elemnt9{
+   grid-column-start: 1; 
+   grid-column-end: 5; 
+}
+
+ /*--EXERCICI 9 - B--*/
+ .ex9b{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   grid-template-rows: auto auto auto; 
+   grid-gap: 20px 10px; 
+}
+
+.ex9b > .elemnt1{
+   grid-column-start: 1;
+   grid-column-end: 3;
+}
+
+.ex9b > .elemnt2{
+   grid-column-start: 3;
+   grid-column-end: 5;
+   grid-row-start: 1; 
+   grid-row-end: 3; 
+}
+
+.ex9b > .elemnt9{
+   grid-column-start: 1; 
+   grid-column: span 4; 
+}
+
+ /*--EXERCICI 10--*/
+ .ex10{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   grid-template-rows: auto auto auto; 
+   grid-gap: 20px 10px; 
+}
+
+.ex10 > .elemnt1{
+   grid-column-start: 1;
+   grid-column-end: 3;
+}
+
+.ex10 > .elemnt2{
+   grid-column-start: 3;
+   grid-column-end: 5;
+   grid-row-start: 1; 
+   grid-row-end: 3; 
+}
+
+.ex10 > .elemnt3{
+   grid-row: span 3;
+}
+
+.ex10 > .elemnt9{
+   grid-column-start: 1; 
+   grid-column: span 4; 
 }
