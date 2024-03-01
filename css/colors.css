@@ -28,22 +28,23 @@
 }
 
 .r1 {
-  background-color: red;
+  background-color: #ff0000;
+  mix-blend-mode: lighten;
 }
 
 .g2 {
-  background-color: green;
+  background-color:#00ff00;
   position: relative;
   margin-left: -70px;
-  mix-blend-mode: difference;
+  mix-blend-mode: lighten;
 }
 
 .b3 {
-  background-color: blue;
+  background-color: #0000ff;
   position: relative;
   margin-top: 100px;
   margin-left: -230px;
-  mix-blend-mode: screen;
+  mix-blend-mode: lighten;
 }
 
 .c1 {
