@@ -43,7 +43,7 @@
   position: relative;
   margin-top: 100px;
   margin-left: -230px;
-  mix-blend-mode: difference;
+  mix-blend-mode: screen;
 }
 
 .c1 {
@@ -65,21 +65,7 @@
   mix-blend-mode: darken;
 }
 
-/*--EXERCICI 2: PALETA
-
-  --bg1: #d9cbba;
-  --accent1: #d98032;
-  --coffee: #40251b;
-  --pastelCoffee: #8c4637;
-  --pastelSalmon: #d98673;
-
-  --dark-moss-green: #606c38ff;
-  --pakistan-green: #283618ff;
-  --cornsilk: #fefae0ff;
-  --earth-yellow: #dda15eff;
-  --tigers-eye: #bc6c25ff;
-
---*/
+/*--EXERCICI 2: PALETA --*/
 :root {
   --bg1: #d9cbba;
   --bg2: #c5ac8e;
@@ -88,13 +74,10 @@
   --pastelCoffee: #8c4637;
   --pastelSalmon: #d98673;
 
-  --dark-moss-green: #606c38ff;
-  --pakistan-green: #283618ff;
-  --cornsilk: #fefae0ff;
-  --earth-yellow: #dda15eff;
-  --tigers-eye: #bc6c25ff;
-
-  --elm9: #a75840;
+  --sh1:#AB9E8E;
+  --sh2:#807464;
+  --sh3:#574C3E;
+  --sh4:#31271A;
 }
 
 .elem {
@@ -155,16 +138,16 @@ span {
 }
 
 .el7 {
-  background-color: var(--earth-yellow);
+  background-color: var(--sh4);
   /*background-color: seagreen;*/
 }
 
 .el8 {
-  background-color: var(--tigers-eye);
+  background-color: var(--sh2);
   /*background-color: coral;*/
 }
 
 .el9 {
-  background-color: var(--elm9);
+  background-color: var(--sh3);
   /*background-color: rebeccapurple;*/
 }
