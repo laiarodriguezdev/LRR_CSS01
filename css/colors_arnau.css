@@ -4,6 +4,19 @@
     font-size: 15px;
   }
   
+  /*------LAIA CANVIANT COLORS-----*/
+
+  :root{
+    /*--PALETA 1 --*/
+    --bg1: #d9cbba;
+    --bg2: #c5ac8e;
+    --accent1: #d98032;
+    --coffee: #40251b;
+    --pastelCoffee: #8c4637;
+    --pastelSalmon: #d98673;
+  }
+  
+
   header {
     position: relative;
     margin-top: 4.5rem;
@@ -17,6 +30,7 @@
   .page {
     max-width: 70%;
     margin-left: 15%;
+    background-color: var(--pastelSalmon)!important;
   }
   
   .milcolores {
@@ -50,7 +64,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #333;
+    background-color: var(--bg2)!important;
     padding: 1rem;
     height: 2.5rem;
   }
@@ -58,7 +72,7 @@
   button {
     float: right;
     padding: 15px;
-    background-color: #282828;
+    background-color: var(--pastelCoffee)!important;
     color: white;
     border: none;
     cursor: pointer;
@@ -71,6 +85,7 @@
   
   .about_us {
     height: auto;
+    background-color: var(--accent1);
     /* border: red 1px solid; */
   }
   
@@ -88,7 +103,6 @@
   
   .nosaltressub {
     margin-top: 2rem;
-   
   }
   
   .nosaltressub2 {
@@ -96,6 +110,7 @@
   }
   
   .carta {
+    background-color: var(--bg2);
     display: grid;
     grid-template-columns: 15% 40% 40%;
     gap: 1rem;
@@ -103,17 +118,18 @@
   }
   
   .menu {
-  
+    background-color: var(--coffee);
+    color:var(--bg2);
     grid-column: 1 / span 3;
     height: 3rem;
-    background-color: rgb(0, 0, 69);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
   }
   
   .menu1 {
+    background-color: var(--accent1);
+    color: var(--bg1);
     border: solid red 1px;
     grid-column: 1; /* Ocupa la primera columna */
     grid-row: span 3; /* Ocupa tres filas */
@@ -148,6 +164,7 @@
   .galeria {
     display: flex;
     flex-wrap: wrap;
+    background-color: var(--accent1);
   }
   
   .item {
@@ -309,8 +326,4 @@
     }
     
   }
-  
-  
-  /*------LAIA CANVIANT COLORS-----*/
 
-  
