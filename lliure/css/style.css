@@ -1,0 +1,131 @@
+@import url(https://baldursgate3.game/_nuxt/fonts/QuadraatOffcPro-Demibold.503de61.woff2);
+@import url(https://fonts.googleapis.com/css2?family=Domine&family=Abril+Fatface&family=Frank+Ruhl+Libre&family=Lora&family=Noto+Serif&family=Playfair+Display&display=swap);
+
+
+:root{
+    --bg:#0f0b06;
+    --txt:#ffffffa6;
+    --border:#fbcea0;
+}
+
+html{
+    background-image: url('https://baldursgate3.game/masks/smoke.jpg');
+    background-color:var(--bg)!important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+
+body{ 
+    margin:0px!important;
+    color:var(--txt)!important;
+}
+
+a{
+    text-decoration: none!important;
+}
+
+main{
+    padding-top:10%;
+}
+
+.border{
+    width:100%;
+    content: '';
+    border-top:1px solid var(--border);
+}
+
+.nav-laia{
+    position:fixed;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-img{
+    width: 250px;
+}
+
+.nav-img2{
+    padding-left:2%;
+    width: 45px;
+}
+
+.nav-real{
+    padding-top:25px;
+    display: flex;
+    width: calc(100% - 325px);
+    height: 100%;
+    align-items: stretch;
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.nav-real a{
+    color:var(--border);
+    cursor: crosshair;
+    font-family: 'Lora';
+    letter-spacing: 0.5px;
+    font-size:12px;
+}
+
+.nav-real a:hover{
+    letter-spacing: 0.2px;
+    color:#bdbeb8; 
+}
+
+.titl-main{
+    margin:0 auto;
+    text-align:center;
+}
+
+.titl-main > h1{
+    color:#eee!important;
+    font-weight: 800;
+    font-family: 'Markazi Text', serif;
+}
+
+main > p{
+    color: purple!important;
+}
+
+.titl-main > h4{
+    color:#fbcea0!important;
+    font-family: 'Lora', sans-serif;
+    letter-spacing: 0.8px;
+    text-transform: lowercase;
+    font-weight: 100;
+    margin-block-end: -1.37em;
+}
+
+.loremipsum{
+    position:relative;
+    width:30%;
+    height:auto;
+    margin:0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:15px;
+    line-height: 155%;
+    color:#fbcea0;
+    margin-bottom: 50px;
+}
+
+.about-bg{
+    width:100%;
+    height:auto;
+    background-image: url('https://baldursgate3.game/about/about-homepage.png');
+    margin: 0 auto;
+    padding: 240px;
+}
+
+.about-bg > p{
+    width:40%;
+    line-height:160%;
+    text-wrap: pretty;
+}
