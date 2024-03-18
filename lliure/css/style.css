@@ -1,130 +1,142 @@
 @import url(https://fonts.googleapis.com/css2?family=Domine&family=Abril+Fatface&family=Frank+Ruhl+Libre&family=Lora&family=Noto+Serif&family=Playfair+Display&display=swap);
 
-
-
-:root{
-    --bg:#0f0b06;
-    --txt60:#ffffffa6;
-    --txt100:#efefef;
-    --border:#fbcea0;
+@font-face {
+  font-family: "QuadBold";
+  src: url("../fonts/QuadraatOffcPro-Demibold.503de61.woff2") format("woff");
 }
 
-
-html{
-    scroll-behavior: smooth;
-    background-image: url('https://baldursgate3.game/masks/smoke.jpg');
-    background-color:var(--bg)!important;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    overflow-x: hidden;
+@font-face {
+  font-family: "QuadOffc";
+  src: url("../fonts/QuadraatOffcPro.8da61d2.woff2") format("woff");
 }
 
-body{ 
-    margin:0px!important;
-    color:var(--txt)!important;
+:root {
+  --bg: #0f0b06;
+  --txt60: #ffffffa6;
+  --txt100: #efefef;
+  --border: #fbcea0;
+
+  /*--FONTS--*/
+  --Quad1: "QuadOffc";
+  --QuadBold: "QuadBold";
 }
 
-a{
-    text-decoration: none!important;
+html {
+  scroll-behavior: smooth;
+  background-image: url("https://baldursgate3.game/masks/smoke.jpg");
+  background-color: var(--bg) !important;
+  margin-top: -20px !important;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0px !important;
+  color: var(--txt) !important;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 /* main{
     padding-top:10%;
 } */
 
-.border{
-    width:100%;
-    content: '';
-    border-top:1px solid var(--border);
+.border {
+  width: 100%;
+  content: "";
+  border-top: 1px solid var(--border);
 }
 
-.nav-laia{
-    position:fixed;
-    display: flex;
-    width: 100%;
-    height: 10%;
-    align-items: flex-start;
-    align-content: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+.nav-laia {
+  top: 10px;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 10%;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.nav-img{
-    width: 250px;
+.nav-img {
+  width: 250px;
 }
 
-.nav-img2{
-    padding-left:2%;
-    width: 45px;
+.nav-img2 {
+  padding-left: 2%;
+  width: 45px;
 }
 
-.nav-real{
-    padding-top:25px;
-    display: flex;
-    width: calc(100% - 325px);
-    height: 100%;
-    align-items: stretch;
-    align-content: space-around;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    text-transform: uppercase;
+.nav-real {
+  padding-top: 25px;
+  display: flex;
+  width: calc(100% - 325px);
+  height: 100%;
+  align-items: stretch;
+  align-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  text-transform: uppercase;
 }
 
-.nav-real a{
-    color:var(--border);
-    cursor: crosshair;
-    font-family: 'Lora';
-    letter-spacing: 0.5px;
-    font-size:12px;
+.nav-real a {
+  color: var(--border);
+  cursor: crosshair;
+  font-family: var(--QuadBold);
+  letter-spacing: 0.5px;
+  font-size: 12px;
 }
 
-.nav-real > a::before{
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: #fff;
-    opacity: 0;
-    transform: translateY(3px);
-    transition: opacity .3s ease,transform .3s ease;
+.nav-real > a::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  opacity: 0;
+  transform: translateY(3px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-
-.nav-real a:hover{
-    letter-spacing: 0.2px;
-    color:#bdbeb8; 
+.nav-real a:hover {
+  letter-spacing: 0.2px;
+  color: #bdbeb8;
 }
 
-.gen-title{
-    overflow: hidden;
+.gen-title {
+  overflow: hidden;
 }
 
-.titl-img{
-    background-image: url(../img/video-still.jpg);
-    margin:0 auto;
-    height: 1070px;
-    text-align:center;
+.titl-img {
+  background-image: url(../img/video-still.jpg);
+  background-size: auto;
+  background-position: center;
+  margin: 0 auto;
+  height: 1070px;
+  text-align: center;
 }
 
-.titl-main{
-    transform: translate(0px, 2500%);
+.titl-main {
+  transform: translate(0px, 2500%);
 }
 
-.titl-main > h1{
-    text-transform: uppercase;
-    color:var(--txt100);
-    font-weight: 800;
+.titl-main > h1 {
+  text-transform: uppercase;
+  color: var(--txt100);
+  font-weight: 800;
 }
 
-
-.titl-main > span{
-    color:var(--border)!important;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    font-weight: 100;
+h1 > span {
+  color: var(--border) !important;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  font-weight: 100;
 }
 
 /* .loremipsum{
@@ -139,46 +151,45 @@ a{
     margin-bottom: 50px;
 } */
 
-
 /*--ABOUT--*/
 
-.about-bg{
-    width:100%;
-    height:500px;
-    background-image: url('https://baldursgate3.game/about/about-homepage.png');
-    margin: 0 auto;
+.about-bg {
+  width: 100%;
+  height: 500px;
+  background-image: url("https://baldursgate3.game/about/about-homepage.png");
+  margin: 0 auto;
 }
 
-.about-txt{
-    color: var(--txt100); /*-AIXO SERA CANVIAT. -*/
-    position:relative;
-    top:24%;
-    left:12%;
-    width:40%;
-    line-height:160%;
-    text-wrap: pretty;
+.about-txt {
+  color: var(--txt100); /*-AIXO SERA CANVIAT. -*/
+  position: relative;
+  top: 24%;
+  left: 12%;
+  width: 40%;
+  line-height: 160%;
+  text-wrap: pretty;
 }
 
 /*--COMPANIONS--*/
-.gen-companions{
-    width: 100%;
-    background-color: green;
+.gen-companions {
+  width: 100%;
+  background-color: green;
 }
 
 /*--FAQ--*/
-.gen-faq{
-    width: 100%;
-    background-color: red;
+.gen-faq {
+  width: 100%;
+  background-color: red;
 }
 
 /*--HOTFIX--*/
-.gen-hotfix{
-    width: 100%;
-    background-color: purple;
+.gen-hotfix {
+  width: 100%;
+  background-color: purple;
 }
 
 /*--FOOTER--*/
-.gen-footer{
-    width: 100%;
-    background-image: url(../img/footer.jpg);
+.gen-footer {
+  width: 100%;
+  background-image: url(../img/footer.jpg);
 }
