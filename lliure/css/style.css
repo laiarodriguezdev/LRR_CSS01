@@ -23,13 +23,13 @@
 
 html {
   scroll-behavior: smooth;
-  background-image: url("https://baldursgate3.game/masks/smoke.jpg");
-  background-color: var(--bg) !important;
   margin-top: -20px !important;
   overflow-x: hidden;
 }
 
 body {
+background-image: url("https://baldursgate3.game/masks/smoke.jpg");
+background-color: var(--bg) !important;
   margin: 0px !important;
   color: var(--txt) !important;
 }
@@ -158,16 +158,12 @@ h1 > span {
   height: 500px;
   background-image: url("https://baldursgate3.game/about/about-homepage.png");
   margin: 0 auto;
+    display: block;
 }
 
 .about-txt {
+  display: inline-block;
   color: var(--txt100); /*-AIXO SERA CANVIAT. -*/
-  position: relative;
-  top: 24%;
-  left: 12%;
-  width: 40%;
-  line-height: 160%;
-  text-wrap: pretty;
 }
 
 /*--COMPANIONS--*/
