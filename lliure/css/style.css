@@ -14,7 +14,13 @@
   --bg: #0f0b06;
   --txt60: #ffffffa6;
   --txt100: #efefef;
-  --border: #fbcea0;
+  --txtAccent: #fbcea0;
+  --gradientColors: radial-gradient(
+    circle at 50% 50%,
+    #fff 0,
+    #fbcea0 66%,
+    #fbcea0 100%
+  );
 
   /*--FONTS--*/
   --Quad1: "QuadOffc";
@@ -28,8 +34,8 @@ html {
 }
 
 body {
-background-image: url("https://baldursgate3.game/masks/smoke.jpg");
-background-color: var(--bg) !important;
+  background-image: url("https://baldursgate3.game/masks/smoke.jpg");
+  background-color: var(--bg) !important;
   margin: 0px !important;
   color: var(--txt) !important;
 }
@@ -42,10 +48,10 @@ a {
     padding-top:10%;
 } */
 
-.border {
+.border-l {
   width: 100%;
   content: "";
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--txtAccent) !important;
 }
 
 .nav-laia {
@@ -74,7 +80,7 @@ a {
   padding-top: 25px;
   display: flex;
   width: calc(100% - 325px);
-  height: 100%;
+  height: auto;
   align-items: stretch;
   align-content: space-around;
   flex-direction: row;
@@ -84,29 +90,18 @@ a {
 }
 
 .nav-real a {
-  color: var(--border);
+  color: var(--txtAccent);
   cursor: crosshair;
   font-family: var(--QuadBold);
   letter-spacing: 0.5px;
   font-size: 12px;
-}
-
-.nav-real > a::before {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #fff;
-  opacity: 0;
-  transform: translateY(3px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  border-bottom: 1px solid none;
 }
 
 .nav-real a:hover {
-  letter-spacing: 0.2px;
-  color: #bdbeb8;
+  letter-spacing: 1.2px;
+  color: var(--txt100);
+  border-bottom: 1px solid var(--txtAccent);
 }
 
 .gen-title {
@@ -120,23 +115,22 @@ a {
   margin: 0 auto;
   height: 1070px;
   text-align: center;
+  overflow: hidden;
 }
 
 .titl-main {
-  transform: translate(0px, 2500%);
+  transform: translate(0px, 900%);
 }
 
 .titl-main > h1 {
+  font-size: 70px;
+  background: var(--gradientColors);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-transform: uppercase;
-  color: var(--txt100);
-  font-weight: 800;
-}
-
-h1 > span {
-  color: var(--border) !important;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 400;
+  font-family: var(--QuadBold);
 }
 
 /* .loremipsum{
@@ -158,12 +152,31 @@ h1 > span {
   height: 500px;
   background-image: url("https://baldursgate3.game/about/about-homepage.png");
   margin: 0 auto;
-    display: block;
+  display: block;
 }
 
 .about-txt {
   display: inline-block;
-  color: var(--txt100); /*-AIXO SERA CANVIAT. -*/
+  font-family: var(--QuadBold);
+  width: 450px;
+  position: relative;
+  top: 18%;
+  left: 12%;
+}
+
+.about-txt > h1 {
+  color: var(--txt100);
+}
+
+.about-txt > h4 {
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  color: var(--txtAccent);
+}
+
+.about-txt > p {
+  font-size: 1.02rem;
+  color: var(--txt60);
 }
 
 /*--COMPANIONS--*/
@@ -181,7 +194,29 @@ h1 > span {
 /*--HOTFIX--*/
 .gen-hotfix {
   width: 100%;
+  padding: 5%;
   background-color: purple;
+}
+
+.hotfix-scroll {
+  height: 350px;
+  width: calc(100% - 90px);
+  margin: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: red;
+}
+
+.hotfix-scroll::-webkit-scrollbar {
+  width: 2px !important;
+  height: 2px !important;
+  background: aquamarine;
+}
+
+.hotfix-scroll::-webkit-scrollbar-thumb {
+  width: 2px !important;
+  height: 2px !important;
+  background: red;
 }
 
 /*--FOOTER--*/
