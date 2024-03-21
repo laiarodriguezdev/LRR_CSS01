@@ -16,7 +16,7 @@
   --txt100: #efefef;
   --txtAccent: #fbcea0;
   --gradientColors: radial-gradient(
-    circle at 50% 50%,
+    circle at 20% 30%,
     #fff 0,
     #fbcea0 66%,
     #fbcea0 100%
@@ -44,10 +44,6 @@ a {
   text-decoration: none !important;
 }
 
-/* main{
-    padding-top:10%;
-} */
-
 .border-l {
   width: 100%;
   content: "";
@@ -55,6 +51,7 @@ a {
 }
 
 .nav-laia {
+  z-index: 99;
   top: 10px;
   position: fixed;
   display: flex;
@@ -119,7 +116,7 @@ a {
 }
 
 .titl-main {
-  transform: translate(0px, 900%);
+  transform: translate(0px, 120%);
 }
 
 .titl-main > h1 {
