@@ -166,8 +166,8 @@ a {
 }
 
 .about-txt > h4 {
-  font-size: 0.75rem;
-  letter-spacing: 2.5px;
+  font-size: 0.77rem;
+  letter-spacing: 2px;
   color: var(--txtAccent);
   font-family: var(--Quad1);
 }
