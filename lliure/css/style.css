@@ -115,8 +115,8 @@ a {
   overflow: hidden;
 }
 
-.titl-main {
-  transform: translate(0px, 120%);
+.titl-transform {
+  transform: translate(0px, 650%);
 }
 
 .titl-main > h1 {
@@ -167,13 +167,16 @@ a {
 
 .about-txt > h4 {
   font-size: 0.75rem;
-  letter-spacing: 1.5px;
+  letter-spacing: 2.5px;
   color: var(--txtAccent);
+  font-family: var(--Quad1);
 }
 
 .about-txt > p {
-  font-size: 1.02rem;
+  font-size: 1.05rem;
   color: var(--txt60);
+  line-height: 155%;
+  font-family: var(--QuadBold);
 }
 
 /*--COMPANIONS--*/
