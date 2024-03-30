@@ -31,6 +31,8 @@ html {
   scroll-behavior: smooth;
   margin-top: -20px !important;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -130,20 +132,34 @@ a {
   font-family: var(--QuadBold);
 }
 
-/* .loremipsum{
-    position:relative;
-    width:30%;
-    height:auto;
-    margin:0 auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size:15px;
-    line-height: 155%;
-    color:#fbcea0;
-    margin-bottom: 50px;
-} */
+.btn-baldurs{
+  cursor: crosshair!important;
+  padding: 10px;
+  background-image: url("https://baldursgate3.game/masks/smoke.jpg");
+  background-position: center;
+  background-size: cover;
+  color:var(--txt60);
+  font-family: var(--QuadBold);
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  font-weight: 800;
+  text-transform: uppercase;
+  outline: 1px solid #462d13;
+  border:1px solid var(--txtAccent);
+  transition: 0.3s all ease-in-out;
+}
+
+.btn-baldurs:hover,
+.btn-baldurs:active{
+  background-color:#2e1c09;
+  color:var(--txt100);
+  letter-spacing: 1.3px;
+  outline: 1px solid var(--txtAccent);
+  border:1px solid #2e1c09;
+  transition: 0.3s all ease-in-out;
+}
 
 /*--ABOUT--*/
-
 .about-bg {
   width: 100%;
   height: 500px;
@@ -170,13 +186,17 @@ a {
   letter-spacing: 2px;
   color: var(--txtAccent);
   font-family: var(--Quad1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .about-txt > p {
-  font-size: 1.05rem;
+  font-size: 1.125rem;
   color: var(--txt60);
   line-height: 155%;
-  font-family: var(--QuadBold);
+  font-family: var(--Quad1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*--COMPANIONS--*/
@@ -194,29 +214,152 @@ a {
 /*--HOTFIX--*/
 .gen-hotfix {
   width: 100%;
-  padding: 5%;
-  background-color: purple;
+  padding: 5% 2%;
+  background-image: url("https://baldursgate3.game/masks/smoke.jpg");
 }
 
 .hotfix-scroll {
-  height: 350px;
+  height: 280px;
   width: calc(100% - 90px);
   margin: auto;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  background-color: red;
+  padding: 2px;
+  overflow:hidden;
+  column-count:4;
+  overflow-x:auto;
 }
 
-.hotfix-scroll::-webkit-scrollbar {
-  width: 2px !important;
-  height: 2px !important;
-  background: aquamarine;
+.hotfix-scroll::-webkit-scrollbar-track{background-color: transparent!important;border: none!important;}
+.hotfix-scroll::-webkit-scrollbar-thumb{background: transparent!important;border-bottom:2px solid var(--txtAccent);}
+.hotfix-scroll::-webkit-scrollbar{width:2px;height: 2px;background-color:transparent!important;} 
+
+.hotfix-cgen{
+  height:95%;
+  display:-webkit-inline-box;
+  overflow:hidden;
+  padding:5px;
+  outline: 1px solid var(--txtAccent);
+  transition: 0.8s all ease-in-out;
 }
 
-.hotfix-scroll::-webkit-scrollbar-thumb {
-  width: 2px !important;
-  height: 2px !important;
-  background: red;
+.hotfix-ctxt{
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.hotfix-ctitl{
+  width: 100%;
+  height: 35%;
+  padding: 2%;
+  overflow: hidden;
+}
+
+.hotfix-ctitl > h1 {
+  font-size: 1.82rem;
+  color: var(--txt100);
+  text-transform: uppercase;
+  overflow: hidden;
+  font-weight: 400;
+  font-family: var(--QuadBold);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: 0.8s all ease-in-out;
+}
+
+
+.hotfix-cdesc{
+  width: 100%;
+  height: calc(100% - 35%);
+  padding: 2%;
+  overflow: hidden;
+  color: var(--txt60);
+  font-family: var(--Quad1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hotfix-cdesc span{
+  padding-top: 2rem;
+  display: block;
+  color: var(--txtAccent);
+  font-family: var(--Quad1);
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: right;
+  transition: 0.8s all ease-in-out;
+}
+
+.hotfix-img{
+  width: 30%;
+  height: 100%;
+  background-image: url('https://cmsapi.larian.com//uploads/image/65f849ca7631d.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.hotfix-cgen:hover .hotfix-cdesc span{
+  letter-spacing: 1.2px;
+  color: var(--txt60);
+  transition: 0.8s all ease-in-out;
+}
+
+.hotfix-cgen:hover .hotfix-ctitl h1{
+  color: var(--txtAccent);
+  transition: 0.8s all ease-in-out;
+}
+
+.hotfix-cgen:hover{
+  outline: 1px solid transparent;
+  transition: 0.8s all ease-in-out;
+}
+
+.img21{
+  background-image: url('https://cmsapi.larian.com//uploads/image/65e9b4752ca7e.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.img20{
+  background-image: url('https://cmsapi.larian.com//uploads/image/65e0888daf9eb.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.img19{
+  background-image: url('https://cmsapi.larian.com//uploads/image/65e08b117a8bb.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.img18{
+  background-image: url('https://cmsapi.larian.com//uploads/image/65d46d906a5ed.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.img17{
+  background-image: url('https://cmsapi.larian.com//uploads/image/6603f9d556f31.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.img16{
+  background-image: url('https://cmsapi.larian.com//uploads/image/65cf316211047.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.img15{
+  background-image: url('https://cmsapi.larian.com//uploads/image/65f849ca7631d.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 /*--FOOTER--*/
