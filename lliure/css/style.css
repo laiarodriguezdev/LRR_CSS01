@@ -331,13 +331,69 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
   font-family: var(--QuadBold);
 }
 
+.mauto{
+  width: 50%;
+  margin: auto;
+}
 
+details{
+  border: 1px solid var(--txtAccent);
+  padding: 1.2rem;
+  margin-top: 2rem;
+}
+
+summary::marker {
+  font-size: 1.5em;
+  content: "+";
+  color: var(--txt60);
+}
+
+[open] summary::marker {
+  font-size: 1.5em;
+  content: "-";
+  color: var(--txt60);
+}
+
+details summary {
+  cursor: pointer;
+  user-select: none; 
+}
+
+summary p{
+  font-size: 1.25rem;
+  font-family: var(--Quad1);
+  text-transform: uppercase;
+  display: inline;
+}
+
+details p,
+summary p{
+  color: var(--txt60);
+}
+
+.desc-laia{
+  padding: 0.5rem;
+  font-size: 1.05rem;
+  font-family: var(--Quad1);
+}
 
 /*--HOTFIX--*/
 .gen-hotfix {
   width: 100%;
   padding: 5% 2%;
   background-image: url("https://baldursgate3.game/masks/smoke.jpg");
+}
+
+.gen-hotfix h1{
+  text-align: center;
+  font-size: 4.375rem;
+  background: var(--gradientColors);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--QuadBold);
 }
 
 .hotfix-scroll {
@@ -488,5 +544,20 @@ audio::-webkit-media-controls-toggle-closed-captions-button {
 /*--FOOTER--*/
 .gen-footer {
   width: 100%;
+  height: 400px!important;
   background-image: url(../img/footer.jpg);
+}
+
+.foot-one{
+  background-color: red;
+  width: 100%;
+  height: 30%;
+  padding: 2rem;
+}
+
+.foot-two{
+  background-color: purple;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
 }
