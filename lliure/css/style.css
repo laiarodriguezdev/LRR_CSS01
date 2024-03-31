@@ -95,12 +95,14 @@ a {
   letter-spacing: 0.5px;
   font-size: 12px;
   border-bottom: 1px solid none;
+  transition: 0.3s all ease-in-out;
 }
 
 .nav-real a:hover {
   letter-spacing: 1.2px;
   color: var(--txt100);
   border-bottom: 1px solid var(--txtAccent);
+  transition: 0.3s all ease-in-out;
 }
 
 .gen-title {
@@ -122,7 +124,7 @@ a {
 }
 
 .titl-main > h1 {
-  font-size: 70px;
+  font-size: 4.375rem;
   background: var(--gradientColors);
   background-clip: text;
   -webkit-background-clip: text;
@@ -202,14 +204,134 @@ a {
 /*--COMPANIONS--*/
 .gen-companions {
   width: 100%;
-  background-color: green;
+  padding: 5% 2%;
+  background-image: url("https://baldursgate3.game/masks/smoke.jpg");
 }
+
+
+.gen-companions h1{
+  text-align: center;
+  font-size: 4.375rem;
+  background: var(--gradientColors);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--QuadBold);
+}
+
+.companions-laia{
+  padding-top:2rem;
+  height: 500px;
+  width: 100%;
+}
+
+.companions-laia > .row{
+  width: 100%;
+  height: 100%;
+}
+
+/*--AUDIO, AMAGA COSES--*/
+audio{
+  z-index:99;
+  width:198px;
+  height:20px;
+  overflow:hidden;
+}
+
+audio::-webkit-media-controls-panel{
+  background-color:var(--txtAccent);
+  opacity:1;
+}
+
+/*--VOLUMEN--*/
+audio::-webkit-media-controls-volume-slider {
+display: none!important; }
+
+audio::-webkit-media-controls-volume-slider {
+display: none !important; }
+
+audio::-webkit-media-controls-volume-control-container.closed {
+display: none !important;} 
+
+audio::-webkit-media-controls-volume-control-container{
+  display: none !important; }
+
+/*--TEM--*/
+audio::-webkit-media-controls-time-remaining-display {
+    display: none!important; }
+
+audio::-webkit-media-controls-toggle-closed-captions-button {
+    display: none;
+}
+
+.titl-companion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.375rem;
+  background: var(--gradientColors);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--QuadBold);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.img-companion{
+  background-size: cover;
+  background-image: url(../img/yuno-partida1.png);
+}
+
+.txt-companion{
+  font-size: 1.125rem;
+  line-height: 145%;
+  font-weight: 400;
+  color: var(--txt60);
+  font-family: var(--Quad1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.txt-companion b{
+  font-weight: 500;
+  font-size: 1.185rem;
+  border-bottom: 1px solid var(--txtAccent);
+}
+
+.txt-scroll{
+  padding: 2px;
+  overflow-y: auto;
+}
+
+.txt-scroll::-webkit-scrollbar-track{background-color: transparent!important;border: none!important;}
+.txt-scroll::-webkit-scrollbar-thumb{background: transparent!important;border-left:2px solid var(--txtAccent);}
+.txt-scroll::-webkit-scrollbar{width:2px;height: 2px;background-color:transparent!important;} 
 
 /*--FAQ--*/
 .gen-faq {
   width: 100%;
-  background-color: red;
+  padding: 5% 2%;
+  background-image: url("https://baldursgate3.game/masks/smoke.jpg");
 }
+
+.gen-faq h1{
+  text-align: center;
+  font-size: 4.375rem;
+  background: var(--gradientColors);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--QuadBold);
+}
+
+
 
 /*--HOTFIX--*/
 .gen-hotfix {
@@ -305,6 +427,7 @@ a {
 }
 
 .hotfix-cgen:hover .hotfix-cdesc span{
+  cursor:crosshair;
   letter-spacing: 1.2px;
   color: var(--txt60);
   transition: 0.8s all ease-in-out;
