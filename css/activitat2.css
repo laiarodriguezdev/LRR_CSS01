@@ -43,9 +43,14 @@ header {
   position: relative;
   height: 350px;
   padding: 1.5rem 0rem;
+  background-color: #1c1c1ccc;
+  background-blend-mode: multiply;
+  background-image: url(../img/header/header-1080.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
   display: flex;
   overflow: hidden;
-  
+
 }
 
 header h1 {
@@ -135,8 +140,8 @@ h3 {
 
 .sectRight2 img,
 .sectLeft img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   object-position: 50% 50%;
   object-fit: cover;
 }
@@ -208,7 +213,7 @@ h5 {
 
 .img1 {
   background-size: cover;
-  background-image: url('https://i.imgur.com/Zd8cC6h.jpeg');
+  background-image: url(../img/menu/menu1-500.jpg);
 }
 
 .item4 p,

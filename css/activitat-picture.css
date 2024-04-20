@@ -1,0 +1,64 @@
+/*--MEDIA QUERIES PERQUE AMB PICTURE NO POT SER.--*/
+
+@media screen and (max-width: 768px) {
+    header {
+        background-color: #1c1c1ccc;
+        background-blend-mode: multiply;
+        background-image: url(../img/header/header-768.jpg);
+    }
+
+    .sectRight2 img,
+    .sectLeft img {
+    width: 100%;
+    height: 100%;
+    }
+
+    .sectLeft img{
+        background-image: url('../img/nosaltres1/nosaltres1-768.jpg');
+    }
+
+    .sectRight2 img{
+        background-image: url('../img/nosaltres2/nosaltres2-768.jpg');
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .sectRight2 img,
+    .sectLeft img {
+    width: 100%;
+    height: 100%;
+    }
+
+    .sectLeft img{
+        background-image: url('../img/nosaltres1/nosaltres1-768.jpg');
+    }
+
+    .sectRight2 img{
+        background-image: url('../img/nosaltres2/nosaltres2-768.jpg');
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        background-color: #1c1c1ccc;
+        background-blend-mode: multiply;
+        background-image: url(../img/header/header-500.jpg);
+    }
+
+    .sectRight2 img,
+    .sectLeft img {
+    width: 100%;
+    height: 100%;
+    }
+
+    .sectLeft img{
+        background-image: url('../img/nosaltres1/nosaltres1-768.jpg');
+    }
+
+    .sectRight2 img{
+        background-image: url('../img/nosaltres2/nosaltres2-768.jpg');
+    }
+
+}
