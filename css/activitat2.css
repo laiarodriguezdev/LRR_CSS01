@@ -45,6 +45,7 @@ header {
   padding: 1.5rem 0rem;
   display: flex;
   overflow: hidden;
+  
 }
 
 header h1 {
@@ -59,10 +60,7 @@ header h1 {
   letter-spacing: 0.2rem;
 }
 
-picture img{
-  width: 100%;
-  position: absolute;
-}
+
 
 /*-- MAIN --*/
 
@@ -137,8 +135,8 @@ h3 {
 
 .sectRight2 img,
 .sectLeft img {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
   object-position: 50% 50%;
   object-fit: cover;
 }
